@@ -35,16 +35,19 @@ const Todo = () => {
                 <div className="mydiv">
                     <h1>ToDo<span className="span">WebApp</span></h1>
                     <br />
-                    <input type="text"
-                        onChange={(e) => setinputList(e.target.value)}
-                        value={inputList}
-                    />
-                    <button onClick={AddData}><i class="fa fa-plus-square" style={{ fontSize: '36px' }}></i></button>
-
+                    <div class="col-3">
+                        <input className="inputAnimation" type="text" placeholder=""
+                            onChange={(e) => setinputList(e.target.value)}
+                            value={inputList} />
+                        <label>First Name</label>
+                    </div>
                     <div>
+                        <button className="buttons" onClick={AddData}><i className="fa fa-plus-square" style={{ fontSize: '36px' }}></i></button>
+
 
                     </div>
                     <br />
+                    <div className="datalist">
                     {items.map((itemval, index) => {
                         return <TodoData
                             key={index} id={index} text={itemval}
@@ -52,6 +55,7 @@ const Todo = () => {
                         />;
                     })
                     }
+                    </div>
                 </div>
             </div>
         </>
