@@ -36,10 +36,10 @@ const Todo = () => {
                     <h1>ToDo<span className="span">WebApp</span></h1>
                     <br />
                     <div class="col-3">
-                        <input className="inputAnimation" type="text" placeholder=""
+                        <input className="inputAnimation" type="text" placeholder="Enter somthing..."
                             onChange={(e) => setinputList(e.target.value)}
                             value={inputList} />
-                        <label>First Name</label>
+                        <label></label>
                     </div>
                     <div>
                         <button className="buttons" onClick={AddData}><i className="fa fa-plus-square" style={{ fontSize: '36px' }}></i></button>
