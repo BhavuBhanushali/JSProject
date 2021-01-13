@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './style.css';
 import TodoData from './TodoList';
 
-
 const Todo = () => {
 
     const [inputList, setinputList] = useState("");
